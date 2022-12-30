@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MesModelStoreContainer" CdmEntityContainer="MesProc">
+    <FunctionImportMapping FunctionImportName="Backup_CCMMES" FunctionName="Mes.Model.Store.Backup_CCMMES" />
+    <FunctionImportMapping FunctionImportName="BatchUseMatD" FunctionName="Mes.Model.Store.BatchUseMatD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mes.Model.BatchUseMatD_Result">
+          <ScalarProperty Name="FC_MatSN" ColumnName="FC_MatSN" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BatchUseMatDs" FunctionName="Mes.Model.Store.BatchUseMatDs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mes.Model.BatchUseMatDs_Result">
+          <ScalarProperty Name="FC_MatSN" ColumnName="FC_MatSN" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="BatchUseMatDss" FunctionName="Mes.Model.Store.BatchUseMatDss">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mes.Model.BatchUseMatDss_Result">
+          <ScalarProperty Name="FC_MatSN" ColumnName="FC_MatSN" />
+          <ScalarProperty Name="领用数量" ColumnName="领用数量" />
+          <ScalarProperty Name="使用数量" ColumnName="使用数量" />
+          <ScalarProperty Name="剩余数量" ColumnName="剩余数量" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Find_Lock" FunctionName="Mes.Model.Store.Find_Lock" />
+    <FunctionImportMapping FunctionImportName="GetSerialNumberBySNID" FunctionName="Mes.Model.Store.GetSerialNumberBySNID" />
+    <FunctionImportMapping FunctionImportName="GetSnPlog" FunctionName="Mes.Model.Store.GetSnPlog" />
+    <FunctionImportMapping FunctionImportName="p_lockinfo" FunctionName="Mes.Model.Store.p_lockinfo" />
+    <FunctionImportMapping FunctionImportName="PR_AutoTran" FunctionName="Mes.Model.Store.PR_AutoTran" />
+    <FunctionImportMapping FunctionImportName="PR_ClearData" FunctionName="Mes.Model.Store.PR_ClearData" />
+    <FunctionImportMapping FunctionImportName="PR_ClearFPoData" FunctionName="Mes.Model.Store.PR_ClearFPoData" />
+    <FunctionImportMapping FunctionImportName="PR_ClearYWData" FunctionName="Mes.Model.Store.PR_ClearYWData" />
+    <FunctionImportMapping FunctionImportName="PR_CreateTestData" FunctionName="Mes.Model.Store.PR_CreateTestData" />
+    <FunctionImportMapping FunctionImportName="PR_HR_GetSPCDept" FunctionName="Mes.Model.Store.PR_HR_GetSPCDept" />
+    <FunctionImportMapping FunctionImportName="PR_PRD_BATCHMOVE" FunctionName="Mes.Model.Store.PR_PRD_BATCHMOVE" />
+    <FunctionImportMapping FunctionImportName="PR_PRD_LCDRateData" FunctionName="Mes.Model.Store.PR_PRD_LCDRateData" />
+    <FunctionImportMapping FunctionImportName="PR_PRD_LCDRateData_1" FunctionName="Mes.Model.Store.PR_PRD_LCDRateData_1" />
+    <FunctionImportMapping FunctionImportName="PR_PRD_LCDRateData_2" FunctionName="Mes.Model.Store.PR_PRD_LCDRateData_2" />
+    <FunctionImportMapping FunctionImportName="PR_PRD_LCDRateData_3" FunctionName="Mes.Model.Store.PR_PRD_LCDRateData_3" />
+    <FunctionImportMapping FunctionImportName="PR_PRD_LCDRateData_3备份20170802" FunctionName="Mes.Model.Store.PR_PRD_LCDRateData_3备份20170802" />
+    <FunctionImportMapping FunctionImportName="PR_PRD_LCDRateData_3备份20180118" FunctionName="Mes.Model.Store.PR_PRD_LCDRateData_3备份20180118" />
+    <FunctionImportMapping FunctionImportName="PR_Prd_UpdDayPlan" FunctionName="Mes.Model.Store.PR_Prd_UpdDayPlan" />
+    <FunctionImportMapping FunctionImportName="PR_PRD_WorkcenterOutData" FunctionName="Mes.Model.Store.PR_PRD_WorkcenterOutData" />
+    <FunctionImportMapping FunctionImportName="PR_RPT_BatchRate" FunctionName="Mes.Model.Store.PR_RPT_BatchRate" />
+    <FunctionImportMapping FunctionImportName="Pr_Sys_AllowData" FunctionName="Mes.Model.Store.Pr_Sys_AllowData" />
+    <FunctionImportMapping FunctionImportName="PR_SYS_AUTONO" FunctionName="Mes.Model.Store.PR_SYS_AUTONO" />
+    <FunctionImportMapping FunctionImportName="Pr_Sys_GetCBusDept" FunctionName="Mes.Model.Store.Pr_Sys_GetCBusDept" />
+    <FunctionImportMapping FunctionImportName="PR_Sys_RoleModule" FunctionName="Mes.Model.Store.PR_Sys_RoleModule">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mes.Model.PR_Sys_RoleModule_Result">
+          <ScalarProperty Name="FC_ModuleID" ColumnName="FC_ModuleID" />
+          <ScalarProperty Name="FC_Name" ColumnName="FC_Name" />
+          <ScalarProperty Name="FC_ImageUrl" ColumnName="FC_ImageUrl" />
+          <ScalarProperty Name="FC_URL" ColumnName="FC_URL" />
+          <ScalarProperty Name="FC_Qtips" ColumnName="FC_Qtips" />
+          <ScalarProperty Name="FN_SortNum" ColumnName="FN_SortNum" />
+          <ScalarProperty Name="FC_ParentID" ColumnName="FC_ParentID" />
+          <ScalarProperty Name="FB_Enable" ColumnName="FB_Enable" />
+          <ScalarProperty Name="FB_Visible" ColumnName="FB_Visible" />
+          <ScalarProperty Name="FB_Iframe" ColumnName="FB_Iframe" />
+          <ScalarProperty Name="FN_NavType" ColumnName="FN_NavType" />
+          <ScalarProperty Name="FB_ACEnable" ColumnName="FB_ACEnable" />
+          <ScalarProperty Name="FC_ACType" ColumnName="FC_ACType" />
+          <ScalarProperty Name="FC_Dicts" ColumnName="FC_Dicts" />
+          <ScalarProperty Name="FC_ModuleType" ColumnName="FC_ModuleType" />
+          <ScalarProperty Name="FB_AutoData" ColumnName="FB_AutoData" />
+          <ScalarProperty Name="FC_Description" ColumnName="FC_Description" />
+          <ScalarProperty Name="FN_RowFlag" ColumnName="FN_RowFlag" />
+          <ScalarProperty Name="FC_CUserID" ColumnName="FC_CUserID" />
+          <ScalarProperty Name="FD_CDate" ColumnName="FD_CDate" />
+          <ScalarProperty Name="FC_UUserID" ColumnName="FC_UUserID" />
+          <ScalarProperty Name="FD_UDate" ColumnName="FD_UDate" />
+          <ScalarProperty Name="FD_Version" ColumnName="FD_Version" />
+          <ScalarProperty Name="FC_ClientType" ColumnName="FC_ClientType" />
+          <ScalarProperty Name="FI_Image" ColumnName="FI_Image" />
+          <ScalarProperty Name="FC_Command" ColumnName="FC_Command" />
+          <ScalarProperty Name="FN_ImageOrder" ColumnName="FN_ImageOrder" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PR_Sys_RoleModuleDetail" FunctionName="Mes.Model.Store.PR_Sys_RoleModuleDetail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mes.Model.PR_Sys_RoleModuleDetail_Result">
+          <ScalarProperty Name="FC_ModuleID" ColumnName="FC_ModuleID" />
+          <ScalarProperty Name="FC_FuncCode" ColumnName="FC_FuncCode" />
+          <ScalarProperty Name="FC_Name" ColumnName="FC_Name" />
+          <ScalarProperty Name="FN_FuncType" ColumnName="FN_FuncType" />
+          <ScalarProperty Name="FC_CUserID" ColumnName="FC_CUserID" />
+          <ScalarProperty Name="FD_CDate" ColumnName="FD_CDate" />
+          <ScalarProperty Name="FC_UUserID" ColumnName="FC_UUserID" />
+          <ScalarProperty Name="FD_UDate" ColumnName="FD_UDate" />
+          <ScalarProperty Name="FD_Version" ColumnName="FD_Version" />
+          <ScalarProperty Name="FC_Ext1" ColumnName="FC_Ext1" />
+          <ScalarProperty Name="FC_Ext2" ColumnName="FC_Ext2" />
+          <ScalarProperty Name="FC_Ext3" ColumnName="FC_Ext3" />
+          <ScalarProperty Name="FC_Ext4" ColumnName="FC_Ext4" />
+          <ScalarProperty Name="FC_Ext5" ColumnName="FC_Ext5" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PR_SYS_TableSize" FunctionName="Mes.Model.Store.PR_SYS_TableSize" />
+    <FunctionImportMapping FunctionImportName="PR_Sys_UserModule" FunctionName="Mes.Model.Store.PR_Sys_UserModule">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mes.Model.PR_Sys_UserModule_Result">
+          <ScalarProperty Name="FC_ModuleID" ColumnName="FC_ModuleID" />
+          <ScalarProperty Name="FC_Name" ColumnName="FC_Name" />
+          <ScalarProperty Name="FC_ImageUrl" ColumnName="FC_ImageUrl" />
+          <ScalarProperty Name="FC_URL" ColumnName="FC_URL" />
+          <ScalarProperty Name="FC_Qtips" ColumnName="FC_Qtips" />
+          <ScalarProperty Name="FN_SortNum" ColumnName="FN_SortNum" />
+          <ScalarProperty Name="FC_ParentID" ColumnName="FC_ParentID" />
+          <ScalarProperty Name="FB_Enable" ColumnName="FB_Enable" />
+          <ScalarProperty Name="FB_Visible" ColumnName="FB_Visible" />
+          <ScalarProperty Name="FB_Iframe" ColumnName="FB_Iframe" />
+          <ScalarProperty Name="FN_NavType" ColumnName="FN_NavType" />
+          <ScalarProperty Name="FB_ACEnable" ColumnName="FB_ACEnable" />
+          <ScalarProperty Name="FC_ACType" ColumnName="FC_ACType" />
+          <ScalarProperty Name="FC_Dicts" ColumnName="FC_Dicts" />
+          <ScalarProperty Name="FC_ModuleType" ColumnName="FC_ModuleType" />
+          <ScalarProperty Name="FB_AutoData" ColumnName="FB_AutoData" />
+          <ScalarProperty Name="FC_Description" ColumnName="FC_Description" />
+          <ScalarProperty Name="FN_RowFlag" ColumnName="FN_RowFlag" />
+          <ScalarProperty Name="FC_CUserID" ColumnName="FC_CUserID" />
+          <ScalarProperty Name="FD_CDate" ColumnName="FD_CDate" />
+          <ScalarProperty Name="FC_UUserID" ColumnName="FC_UUserID" />
+          <ScalarProperty Name="FD_UDate" ColumnName="FD_UDate" />
+          <ScalarProperty Name="FD_Version" ColumnName="FD_Version" />
+          <ScalarProperty Name="FC_ClientType" ColumnName="FC_ClientType" />
+          <ScalarProperty Name="FI_Image" ColumnName="FI_Image" />
+          <ScalarProperty Name="FC_Command" ColumnName="FC_Command" />
+          <ScalarProperty Name="FN_ImageOrder" ColumnName="FN_ImageOrder" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PR_Upd_GYERPTOMES" FunctionName="Mes.Model.Store.PR_Upd_GYERPTOMES" />
+    <FunctionImportMapping FunctionImportName="ProFirstPrdRate" FunctionName="Mes.Model.Store.ProFirstPrdRate" />
+    <FunctionImportMapping FunctionImportName="Rpt_MachineReport" FunctionName="Mes.Model.Store.Rpt_MachineReport" />
+    <FunctionImportMapping FunctionImportName="Rpt_MachineReportBackup" FunctionName="Mes.Model.Store.Rpt_MachineReportBackup" />
+    <FunctionImportMapping FunctionImportName="Rpt_SetUpRateNewIsLink" FunctionName="Mes.Model.Store.Rpt_SetUpRateNewIsLink">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mes.Model.Rpt_SetUpRateNewIsLink_Result">
+          <ScalarProperty Name="FC_LinkNo" ColumnName="FC_LinkNo" />
+          <ScalarProperty Name="FC_PONo" ColumnName="FC_PONo" />
+          <ScalarProperty Name="FC_ERPPO" ColumnName="FC_ERPPO" />
+          <ScalarProperty Name="FC_Shape" ColumnName="FC_Shape" />
+          <ScalarProperty Name="FN_ERPLG" ColumnName="FN_ERPLG" />
+          <ScalarProperty Name="FC_PSCode" ColumnName="FC_PSCode" />
+          <ScalarProperty Name="FN_TOrder" ColumnName="FN_TOrder" />
+          <ScalarProperty Name="FC_BatchNo" ColumnName="FC_BatchNo" />
+          <ScalarProperty Name="CalOrder" ColumnName="CalOrder" />
+          <ScalarProperty Name="FN_BInNums" ColumnName="FN_BInNums" />
+          <ScalarProperty Name="FN_InNums" ColumnName="FN_InNums" />
+          <ScalarProperty Name="FN_OutNums" ColumnName="FN_OutNums" />
+          <ScalarProperty Name="FN_NgNums" ColumnName="FN_NgNums" />
+          <ScalarProperty Name="FC_TranNo" ColumnName="FC_TranNo" />
+          <ScalarProperty Name="FC_Code" ColumnName="FC_Code" />
+          <ScalarProperty Name="FC_Name" ColumnName="FC_Name" />
+          <ScalarProperty Name="FC_Type" ColumnName="FC_Type" />
+          <ScalarProperty Name="FN_Nums" ColumnName="FN_Nums" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Rpt_SetUpRateNewNoLink" FunctionName="Mes.Model.Store.Rpt_SetUpRateNewNoLink">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Mes.Model.Rpt_SetUpRateNewNoLink_Result">
+          <ScalarProperty Name="FC_ERPPO" ColumnName="FC_ERPPO" />
+          <ScalarProperty Name="FC_Shape" ColumnName="FC_Shape" />
+          <ScalarProperty Name="FN_ERPLG" ColumnName="FN_ERPLG" />
+          <ScalarProperty Name="FC_PONo" ColumnName="FC_PONo" />
+          <ScalarProperty Name="FC_BatchNo" ColumnName="FC_BatchNo" />
+          <ScalarProperty Name="FN_SNums" ColumnName="FN_SNums" />
+          <ScalarProperty Name="FN_OutNums" ColumnName="FN_OutNums" />
+          <ScalarProperty Name="FC_PSCode" ColumnName="FC_PSCode" />
+          <ScalarProperty Name="FC_TranNo" ColumnName="FC_TranNo" />
+          <ScalarProperty Name="FC_CodeNo" ColumnName="FC_CodeNo" />
+          <ScalarProperty Name="FC_Name" ColumnName="FC_Name" />
+          <ScalarProperty Name="FN_Nums" ColumnName="FN_Nums" />
+          <ScalarProperty Name="FC_NGGroup" ColumnName="FC_NGGroup" />
+          <ScalarProperty Name="FC_Type" ColumnName="FC_Type" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Rpt_UserUPHReport" FunctionName="Mes.Model.Store.Rpt_UserUPHReport" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Mes.Model.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Mes.Model.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Mes.Model.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Mes.Model.Store.sp_helpdiagramdefinition" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Mes.Model.Store.sp_helpdiagrams" />
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Mes.Model.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_TongBuCcmPO" FunctionName="Mes.Model.Store.sp_TongBuCcmPO" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Mes.Model.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="sp_zyhistoty" FunctionName="Mes.Model.Store.sp_zyhistoty" />
+    <FunctionImportMapping FunctionImportName="sp_zyhistoty2020Q1" FunctionName="Mes.Model.Store.sp_zyhistoty2020Q1" />
+    <FunctionImportMapping FunctionImportName="sp_zyhistoty2020Q2" FunctionName="Mes.Model.Store.sp_zyhistoty2020Q2" />
+    <FunctionImportMapping FunctionImportName="sp_zyhistoty2020Y" FunctionName="Mes.Model.Store.sp_zyhistoty2020Y" />
+  </EntityContainerMapping>
+</Mapping>

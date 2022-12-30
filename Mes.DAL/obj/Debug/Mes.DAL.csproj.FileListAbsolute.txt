@@ -1,0 +1,11 @@
+F:\MesSystem\Mes.App\Mes.DAL\bin\Debug\Mes.DAL.dll
+F:\MesSystem\Mes.App\Mes.DAL\bin\Debug\Mes.DAL.pdb
+F:\MesSystem\Mes.App\Mes.DAL\obj\Debug\Mes.DAL.csproj.CoreCompileInputs.cache
+F:\MesSystem\Mes.App\Mes.DAL\obj\Debug\Mes.DAL.dll
+F:\MesSystem\Mes.App\Mes.DAL\obj\Debug\Mes.DAL.pdb
+F:\HLTDEVProjectNew\Mes.App\Mes.DAL\bin\Debug\Mes.DAL.dll
+F:\HLTDEVProjectNew\Mes.App\Mes.DAL\bin\Debug\Mes.DAL.pdb
+F:\HLTDEVProjectNew\Mes.App\Mes.DAL\obj\Debug\Mes.DAL.csproj.CoreCompileInputs.cache
+F:\HLTDEVProjectNew\Mes.App\Mes.DAL\obj\Debug\Mes.DAL.dll
+F:\HLTDEVProjectNew\Mes.App\Mes.DAL\obj\Debug\Mes.DAL.pdb
+F:\HLTDEVProjectNew\Mes.App\Mes.DAL\obj\Debug\Mes.DAL.csproj.AssemblyReference.cache

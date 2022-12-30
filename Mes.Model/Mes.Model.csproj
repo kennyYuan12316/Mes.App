@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2299162A-5037-4394-9C20-55C1B5516048}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mes.Model</RootNamespace>
+    <AssemblyName>Mes.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.9\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.3.3.11, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.3.3\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.5.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.6\lib\net45\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.5.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.6\lib\net45\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.5.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.6\lib\net45\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.5.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.6\lib\net45\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommModel\KeyValuePair.cs" />
+    <Compile Include="CommModel\MapperAttribute.cs" />
+    <Compile Include="CommModel\MapperExtension.cs" />
+    <Compile Include="Entites\Department.cs" />
+    <Compile Include="Entites\LableConfigD.cs" />
+    <Compile Include="Entites\LableConfigM.cs" />
+    <Compile Include="Entites\MesDB.cs" />
+    <Compile Include="Entites\sysdiagrams.cs" />
+    <Compile Include="Entites\TB_Sys_Account.cs" />
+    <Compile Include="Entites\TB_Sys_AccountPerm.cs" />
+    <Compile Include="Entites\TB_Sys_AccountRole.cs" />
+    <Compile Include="Entites\TB_Sys_DataDictionaryDetail.cs" />
+    <Compile Include="Entites\TB_Sys_DataDictionaryMaster.cs" />
+    <Compile Include="Entites\TB_Sys_Department.cs" />
+    <Compile Include="Entites\TB_Sys_ModuleDetail.cs" />
+    <Compile Include="Entites\TB_Sys_ModuleMaster.cs" />
+    <Compile Include="Entites\TB_HR_Dept.cs" />
+    <Compile Include="Entites\TB_HR_DeptManas.cs" />
+    <Compile Include="Entites\TB_HR_Employees.cs" />
+    <Compile Include="Entites\TB_Pck_PrtRec.cs" />
+    <Compile Include="Entites\TB_Pck_PrtSeqD.cs" />
+    <Compile Include="Entites\TB_Pck_PrtSeqM.cs" />
+    <Compile Include="Entites\TB_Pck_PrtSeqRec.cs" />
+    <Compile Include="Entites\TB_Prd_AAData.cs" />
+    <Compile Include="Entites\TB_Prd_AccDetail.cs" />
+    <Compile Include="Entites\TB_Prd_AccessoriesD.cs" />
+    <Compile Include="Entites\TB_Prd_AccessoriesD_History.cs" />
+    <Compile Include="Entites\TB_Prd_AccessoriesM.cs" />
+    <Compile Include="Entites\TB_Prd_AdjWarn.cs" />
+    <Compile Include="Entites\TB_Prd_App_System.cs" />
+    <Compile Include="Entites\TB_Prd_ArrangeInfo.cs" />
+    <Compile Include="Entites\TB_Prd_ArrangeStatus.cs" />
+    <Compile Include="Entites\TB_Prd_BackAdjMat.cs" />
+    <Compile Include="Entites\TB_Prd_BackNg.cs" />
+    <Compile Include="Entites\TB_Prd_BackNumSN.cs" />
+    <Compile Include="Entites\TB_Prd_BackPOD.cs" />
+    <Compile Include="Entites\TB_Prd_BackPOM.cs" />
+    <Compile Include="Entites\TB_Prd_BackPOSetup.cs" />
+    <Compile Include="Entites\TB_Prd_BackPOSND.cs" />
+    <Compile Include="Entites\TB_Prd_BakeTimeControl.cs" />
+    <Compile Include="Entites\TB_Prd_BatchBackMat.cs" />
+    <Compile Include="Entites\TB_Prd_BatchDevice.cs" />
+    <Compile Include="Entites\TB_Prd_BatchDownCount.cs" />
+    <Compile Include="Entites\TB_Prd_BatchGetMat.cs" />
+    <Compile Include="Entites\TB_Prd_BatchMat.cs" />
+    <Compile Include="Entites\TB_Prd_BatchUseMat.cs" />
+    <Compile Include="Entites\TB_Prd_BatchUseMat2.cs" />
+    <Compile Include="Entites\TB_Prd_BatchUseMatD.cs" />
+    <Compile Include="Entites\TB_Prd_BindBatchFPC.cs" />
+    <Compile Include="Entites\TB_Prd_BindBatchFPCSN.cs" />
+    <Compile Include="Entites\TB_Prd_BreakPackLog.cs" />
+    <Compile Include="Entites\TB_Prd_ChangeLog.cs" />
+    <Compile Include="Entites\TB_Prd_COBOutNum.cs" />
+    <Compile Include="Entites\TB_Prd_CopyData.cs" />
+    <Compile Include="Entites\TB_Prd_CopyPower.cs" />
+    <Compile Include="Entites\TB_Prd_CredentialPrinting.cs" />
+    <Compile Include="Entites\TB_Prd_DateChar.cs" />
+    <Compile Include="Entites\TB_Prd_DayPlan.cs" />
+    <Compile Include="Entites\TB_Prd_DayPlanD.cs" />
+    <Compile Include="Entites\TB_Prd_DeviceTranInfo.cs" />
+    <Compile Include="Entites\TB_Prd_DeviceTranNGInfo.cs" />
+    <Compile Include="Entites\TB_Prd_EolYeildRate.cs" />
+    <Compile Include="Entites\TB_Prd_FinshChks.cs" />
+    <Compile Include="Entites\TB_Prd_FPCBindMat.cs" />
+    <Compile Include="Entites\TB_Prd_GetAdjMS.cs" />
+    <Compile Include="Entites\TB_Prd_HaiWeiWeekData.cs" />
+    <Compile Include="Entites\TB_Prd_IncomingMatScrap.cs" />
+    <Compile Include="Entites\TB_Prd_InputOverWarehousingLog.cs" />
+    <Compile Include="Entites\TB_Prd_LaserEngravingPoDownNumber.cs" />
+    <Compile Include="Entites\TB_Prd_LaserEngravingPrintSN.cs" />
+    <Compile Include="Entites\TB_Prd_LaserEngravingRecordSN.cs" />
+    <Compile Include="Entites\TB_Prd_LockSNOrSensorID.cs" />
+    <Compile Include="Entites\TB_Prd_LockStatus.cs" />
+    <Compile Include="Entites\TB_Prd_MachineReport.cs" />
+    <Compile Include="Entites\TB_Prd_MachineUPHReport.cs" />
+    <Compile Include="Entites\TB_Prd_MatClose.cs" />
+    <Compile Include="Entites\TB_Prd_MatKeepRight.cs" />
+    <Compile Include="Entites\TB_Prd_MatMouting.cs" />
+    <Compile Include="Entites\TB_Prd_MESPOEX.cs" />
+    <Compile Include="Entites\TB_Prd_MoveD.cs" />
+    <Compile Include="Entites\TB_Prd_MoveM.cs" />
+    <Compile Include="Entites\TB_Prd_NGSplitDetial.cs" />
+    <Compile Include="Entites\TB_Prd_NGSplitMain.cs" />
+    <Compile Include="Entites\TB_Prd_NGSplitOutD.cs" />
+    <Compile Include="Entites\TB_Prd_NGSplitOutM.cs" />
+    <Compile Include="Entites\TB_Prd_NgStoreRW.cs" />
+    <Compile Include="Entites\TB_Prd_OldMatBarcodeBindNewMatBarcode.cs" />
+    <Compile Include="Entites\TB_Prd_OutsideBatchInfo.cs" />
+    <Compile Include="Entites\TB_Prd_OvenTemperaturePaperUpload.cs" />
+    <Compile Include="Entites\TB_Prd_PackValidate.cs" />
+    <Compile Include="Entites\TB_Prd_PickingMat.cs" />
+    <Compile Include="Entites\TB_Prd_PO.cs" />
+    <Compile Include="Entites\TB_Prd_POBatch.cs" />
+    <Compile Include="Entites\TB_Prd_POBatchProd.cs" />
+    <Compile Include="Entites\TB_Prd_POBatchPSN.cs" />
+    <Compile Include="Entites\TB_Prd_POBatch_20220607.cs" />
+    <Compile Include="Entites\TB_Prd_POLinkD.cs" />
+    <Compile Include="Entites\TB_Prd_POLinkM.cs" />
+    <Compile Include="Entites\TB_Prd_POMats.cs" />
+    <Compile Include="Entites\TB_Prd_PoPackInfo.cs" />
+    <Compile Include="Entites\TB_Prd_PoPackList.cs" />
+    <Compile Include="Entites\TB_Prd_POPars.cs" />
+    <Compile Include="Entites\TB_Prd_PoPSMat.cs" />
+    <Compile Include="Entites\TB_Prd_POSetup.cs" />
+    <Compile Include="Entites\TB_Prd_POSetupEX.cs" />
+    <Compile Include="Entites\TB_Prd_POStart.cs" />
+    <Compile Include="Entites\TB_Prd_PoUPHReport.cs" />
+    <Compile Include="Entites\TB_Prd_PPacks.cs" />
+    <Compile Include="Entites\TB_Prd_PPacksD.cs" />
+    <Compile Include="Entites\TB_Prd_PrintLableData.cs" />
+    <Compile Include="Entites\TB_Prd_ProcMans.cs" />
+    <Compile Include="Entites\TB_Prd_ProdTran.cs" />
+    <Compile Include="Entites\TB_Prd_PrtBatchList.cs" />
+    <Compile Include="Entites\TB_Prd_PSMatMaintain.cs" />
+    <Compile Include="Entites\TB_Prd_RecLog.cs" />
+    <Compile Include="Entites\TB_Prd_RecMatDucWebService.cs" />
+    <Compile Include="Entites\TB_Prd_RecMats.cs" />
+    <Compile Include="Entites\TB_Prd_RecordSN.cs" />
+    <Compile Include="Entites\TB_Prd_RepairBackMat.cs" />
+    <Compile Include="Entites\TB_Prd_RepairIn.cs" />
+    <Compile Include="Entites\TB_Prd_RepairOut.cs" />
+    <Compile Include="Entites\TB_Prd_RepairScrap.cs" />
+    <Compile Include="Entites\TB_Prd_RollBackLog.cs" />
+    <Compile Include="Entites\TB_Prd_RoutineCheckSNRecord.cs" />
+    <Compile Include="Entites\TB_Prd_SimpleBindMat.cs" />
+    <Compile Include="Entites\TB_Prd_SizeDetectionData.cs" />
+    <Compile Include="Entites\TB_Prd_SMTMatSetDetail.cs" />
+    <Compile Include="Entites\TB_Prd_SMTMatSetM.cs" />
+    <Compile Include="Entites\TB_Prd_SNData.cs" />
+    <Compile Include="Entites\TB_Prd_SnNgInfo.cs" />
+    <Compile Include="Entites\TB_Prd_SNPLog.cs" />
+    <Compile Include="Entites\TB_Prd_SPIAOIData.cs" />
+    <Compile Include="Entites\TB_Prd_StockInfo.cs" />
+    <Compile Include="Entites\TB_Prd_Stocks.cs" />
+    <Compile Include="Entites\TB_Prd_StoreRemoveD.cs" />
+    <Compile Include="Entites\TB_Prd_StoreRemoveM.cs" />
+    <Compile Include="Entites\TB_Prd_StoreScrapD.cs" />
+    <Compile Include="Entites\TB_Prd_StoreScrapM.cs" />
+    <Compile Include="Entites\TB_Prd_StoreScrapSND.cs" />
+    <Compile Include="Entites\TB_Prd_ThawingAndDeaerate.cs" />
+    <Compile Include="Entites\TB_Prd_TranInfo.cs" />
+    <Compile Include="Entites\TB_Prd_TranInfoLog.cs" />
+    <Compile Include="Entites\TB_Prd_TranMac.cs" />
+    <Compile Include="Entites\TB_Prd_TranNGInfo.cs" />
+    <Compile Include="Entites\TB_Prd_TranPPar.cs" />
+    <Compile Include="Entites\TB_Prd_TranSNNGInfo.cs" />
+    <Compile Include="Entites\TB_Prd_UnBindSNLog.cs" />
+    <Compile Include="Entites\TB_Prd_UnLockSNOrSensorID.cs" />
+    <Compile Include="Entites\TB_Prd_UseAdjMat.cs" />
+    <Compile Include="Entites\TB_Prd_UserUPHReport.cs" />
+    <Compile Include="Entites\TB_Pub_BalanceMatD.cs" />
+    <Compile Include="Entites\TB_Pub_BalanceMatM.cs" />
+    <Compile Include="Entites\TB_Pub_CurrentReciveMat.cs" />
+    <Compile Include="Entites\TB_Pub_DictDetail.cs" />
+    <Compile Include="Entites\TB_Pub_DictMaster.cs" />
+    <Compile Include="Entites\TB_Pub_Machines.cs" />
+    <Compile Include="Entites\TB_Pub_MatCon.cs" />
+    <Compile Include="Entites\TB_Pub_MatListD.cs" />
+    <Compile Include="Entites\TB_Pub_MatListM.cs" />
+    <Compile Include="Entites\TB_Pub_MatRec.cs" />
+    <Compile Include="Entites\TB_Pub_MatUseRec.cs" />
+    <Compile Include="Entites\TB_Pub_NGClass.cs" />
+    <Compile Include="Entites\TB_Pub_NGCodes.cs" />
+    <Compile Include="Entites\TB_Pub_NGGroup.cs" />
+    <Compile Include="Entites\TB_Pub_NoticeMessage.cs" />
+    <Compile Include="Entites\TB_Pub_OperateLog.cs" />
+    <Compile Include="Entites\TB_Pub_POPars.cs" />
+    <Compile Include="Entites\TB_Pub_PreventErrorMatD.cs" />
+    <Compile Include="Entites\TB_Pub_PreventErrorMatM.cs" />
+    <Compile Include="Entites\TB_Pub_ProcClass.cs" />
+    <Compile Include="Entites\TB_Pub_ProcMans.cs" />
+    <Compile Include="Entites\TB_Pub_ProcPriceCount.cs" />
+    <Compile Include="Entites\TB_Pub_ProcProdAbility.cs" />
+    <Compile Include="Entites\TB_Pub_ProcSetup.cs" />
+    <Compile Include="Entites\TB_Pub_ProcSPs.cs" />
+    <Compile Include="Entites\TB_Pub_PSWK.cs" />
+    <Compile Include="Entites\TB_Pub_PWarehouse.cs" />
+    <Compile Include="Entites\TB_Pub_QCParms.cs" />
+    <Compile Include="Entites\TB_Pub_ReciveMat.cs" />
+    <Compile Include="Entites\TB_Pub_RoutingPlanD.cs" />
+    <Compile Include="Entites\TB_Pub_RoutingPlanM.cs" />
+    <Compile Include="Entites\TB_Pub_RPlanType.cs" />
+    <Compile Include="Entites\TB_Pub_SNListD.cs" />
+    <Compile Include="Entites\TB_Pub_SNListM.cs" />
+    <Compile Include="Entites\TB_Pub_SNRec.cs" />
+    <Compile Include="Entites\TB_Pub_SNUseRec.cs" />
+    <Compile Include="Entites\TB_Pub_Storage.cs" />
+    <Compile Include="Entites\TB_Pub_UserDictDetail.cs" />
+    <Compile Include="Entites\TB_Pub_UserDictMaster.cs" />
+    <Compile Include="Entites\TB_Pub_WarClass.cs" />
+    <Compile Include="Entites\TB_Pub_Warehouse.cs" />
+    <Compile Include="Entites\TB_Pub_WCClass.cs" />
+    <Compile Include="Entites\TB_Pub_WCQCParms.cs" />
+    <Compile Include="Entites\TB_Pub_WorkCenter.cs" />
+    <Compile Include="Entites\TB_QC_OQCAQL.cs" />
+    <Compile Include="Entites\TB_QC_OQCCheck.cs" />
+    <Compile Include="Entites\TB_QC_OQCCheckNG.cs" />
+    <Compile Include="Entites\TB_QC_RPCPlan.cs" />
+    <Compile Include="Entites\TB_QC_SPCPlanD.cs" />
+    <Compile Include="Entites\TB_QC_SPCRec.cs" />
+    <Compile Include="Entites\TB_QC_SPCRecD.cs" />
+    <Compile Include="Entites\TB_SAPNGCodes.cs" />
+    <Compile Include="Entites\TB_SYS_AutoNo_Detail.cs" />
+    <Compile Include="Entites\TB_SYS_AutoNo_Master.cs" />
+    <Compile Include="Entites\TB_SYS_AutoNo_Rec.cs" />
+    <Compile Include="Entites\TB_SYS_Config.cs" />
+    <Compile Include="Entites\TB_SYS_ConfigDetail.cs" />
+    <Compile Include="Entites\TB_Sys_ExceptionLog.cs" />
+    <Compile Include="Entites\TB_Sys_Log.cs" />
+    <Compile Include="Entites\TB_Sys_RoleDetail.cs" />
+    <Compile Include="Entites\TB_Sys_RoleMaster.cs" />
+    <Compile Include="Entites\TB_SYS_System.cs" />
+    <Compile Include="Entites\TB_SYS_UserInfo.cs" />
+    <Compile Include="Entites\TB_War_ChkLab.cs" />
+    <Compile Include="Entites\TB_War_ERPInput.cs" />
+    <Compile Include="Entites\TB_War_ERPInputBG.cs" />
+    <Compile Include="Entites\TB_War_ERPInputD.cs" />
+    <Compile Include="Entites\TB_War_ERPInputLab.cs" />
+    <Compile Include="Entites\TB_War_NGERPInput.cs" />
+    <Compile Include="Entites\TB_War_NGERPInputBG.cs" />
+    <Compile Include="Entites\TB_War_NGERPInputD.cs" />
+    <Compile Include="Entites\TB_War_PackB.cs" />
+    <Compile Include="Entites\TB_War_PackLab.cs" />
+    <Compile Include="Entites\TB_War_PackM.cs" />
+    <Compile Include="Entites\TB_War_StoreExcD.cs" />
+    <Compile Include="Entites\TB_War_StoreExcM.cs" />
+    <Compile Include="Entites\TB_Web_ModuleDetail.cs" />
+    <Compile Include="Entites\TB_Web_ModuleMaster.cs" />
+    <Compile Include="Entites\TB_Web_RolesDetail.cs" />
+    <Compile Include="Entites\TB_Web_RolesMaster.cs" />
+    <Compile Include="Entites\TB_Web_UserOprs.cs" />
+    <Compile Include="Entites\TB_Web_UserRoles.cs" />
+    <Compile Include="Entites\TB_WIP_POBatch.cs" />
+    <Compile Include="Entites\TB_WIP_POBatchLog.cs" />
+    <Compile Include="Entites\TB_WIP_POBatchMats.cs" />
+    <Compile Include="Entites\TB_WIP_StopInfo.cs" />
+    <Compile Include="Entites\User.cs" />
+    <Compile Include="Entites\User_MTM_Department.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoredProcedure\BatchUseMatDss_Result.cs">
+      <DependentUpon>MesProc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedure\BatchUseMatDs_Result.cs">
+      <DependentUpon>MesProc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedure\BatchUseMatD_Result.cs">
+      <DependentUpon>MesProc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedure\MesProc.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MesProc.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedure\MesProc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MesProc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedure\MesProc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MesProc.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedure\PR_Sys_RoleModuleDetail_Result.cs">
+      <DependentUpon>MesProc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedure\PR_Sys_RoleModule_Result.cs">
+      <DependentUpon>MesProc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedure\PR_Sys_UserModule_Result.cs">
+      <DependentUpon>MesProc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedure\Rpt_SetUpRateNewIsLink_Result.cs">
+      <DependentUpon>MesProc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedure\Rpt_SetUpRateNewNoLink_Result.cs">
+      <DependentUpon>MesProc.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\AccountOprs.cs" />
+    <Compile Include="ViewModel\AccountRolePermVM.cs" />
+    <Compile Include="ViewModel\AccountVM.cs" />
+    <Compile Include="CommModel\AjaxResult.cs" />
+    <Compile Include="CommModel\ColumnOrderAttribute.cs" />
+    <Compile Include="ViewModel\DataDicAndDetailVM.cs" />
+    <Compile Include="ViewModel\DataDicDetailVM.cs" />
+    <Compile Include="ViewModel\DataDicVM.cs" />
+    <Compile Include="ViewModel\ModuleVM.cs" />
+    <Compile Include="ViewModel\OrganizationVM.cs" />
+    <Compile Include="ViewModel\PermsPageKeyCodeVM.cs" />
+    <Compile Include="ViewModel\RoleDetailVM.cs" />
+    <Compile Include="ViewModel\RolePermVM.cs" />
+    <Compile Include="ViewModel\RoleVM.cs" />
+    <Compile Include="ViewModel\UserProfileVM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="StoredProcedure\MesProc.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MesProc.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="StoredProcedure\MesProc.edmx.diagram">
+      <DependentUpon>MesProc.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="StoredProcedure\MesProc.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MesProc.edmx</DependentUpon>
+      <LastGenOutput>MesProc.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="StoredProcedure\MesProc.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MesProc.edmx</DependentUpon>
+      <LastGenOutput>MesProc.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

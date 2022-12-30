@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Mes.Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="Backup_CCMMES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="BatchUseMatD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="BatchUseMatDs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="BatchUseMatDss" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="F_BS_ConvetInt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="Data" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="F_BS_ConvetMonth" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="Data" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="F_BS_GetDictName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="CatCode" Type="varchar" Mode="In" />
+    <Parameter Name="ItemValue" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="F_BS_GetDictName2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="CatCode" Type="varchar" Mode="In" />
+    <Parameter Name="ItemValue" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="F_Hr_GetDeptName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="DeptID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="F_Hr_GetEmpName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="EmpID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="F_MES_SetupName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="nvarchar">
+    <Parameter Name="Code" Type="varchar" Mode="In" />
+    <Parameter Name="Factory" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="F_MES_WKName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="nvarchar">
+    <Parameter Name="WKNo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="F_Prd_LCDPOIn" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+    <Parameter Name="PoNo" Type="varchar" Mode="In" />
+    <Parameter Name="BCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="F_Sys_AllowData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="UserID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="F_Sys_DControl" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="Data" Type="varchar" Mode="In" />
+    <Parameter Name="UserID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="F_Sys_GetCBusDept" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="UserID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Find_Lock" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="Get_StrArrayLength" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="str" Type="varchar" Mode="In" />
+    <Parameter Name="split" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Get_StrArrayStrOfIndex" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="str" Type="varchar" Mode="In" />
+    <Parameter Name="split" Type="varchar" Mode="In" />
+    <Parameter Name="index" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetSerialNumberBySNID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FC_SNID" Type="varchar" Mode="In" />
+    <Parameter Name="FC_Date" Type="varchar" Mode="In" />
+    <Parameter Name="FC_CureentMAXNo" Type="int" Mode="In" />
+    <Parameter Name="MAXRECORD" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="GetSnPlog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PoNo" Type="varchar" Mode="In" />
+    <Parameter Name="batchNo" Type="varchar" Mode="In" />
+    <Parameter Name="PSCode" Type="varchar" Mode="In" />
+    <Parameter Name="barCode" Type="varchar" Mode="In" />
+    <Parameter Name="chkMac" Type="varchar" Mode="In" />
+    <Parameter Name="FromTime" Type="datetime" Mode="In" />
+    <Parameter Name="ToTime" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="p_lockinfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="kill_lock_spid" Type="bit" Mode="In" />
+    <Parameter Name="show_spid_if_nolock" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="PR_AutoTran" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="PR_ClearData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="PR_ClearFPoData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Factory" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PR_ClearYWData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="PR_CreateTestData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="PR_HR_GetSPCDept" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DeptID" Type="varchar" Mode="In" />
+    <Parameter Name="Lvl" Type="varchar" Mode="In" />
+    <Parameter Name="DeptType" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PR_PRD_BATCHMOVE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MoveNo" Type="varchar" Mode="In" />
+    <Parameter Name="OprNo" Type="varchar" Mode="In" />
+    <Parameter Name="OprResult" Type="int" Mode="InOut" />
+    <Parameter Name="Err" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="PR_PRD_LCDRateData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fac" Type="varchar" Mode="In" />
+    <Parameter Name="CodeNo" Type="varchar" Mode="In" />
+    <Parameter Name="Start" Type="datetime" Mode="In" />
+    <Parameter Name="End" Type="datetime" Mode="In" />
+    <Parameter Name="WorkNo" Type="varchar" Mode="In" />
+    <Parameter Name="poType" Type="varchar" Mode="In" />
+    <Parameter Name="ERPPo" Type="varchar" Mode="In" />
+    <Parameter Name="PoNo" Type="varchar" Mode="In" />
+    <Parameter Name="SoNo" Type="varchar" Mode="In" />
+    <Parameter Name="PNo" Type="varchar" Mode="In" />
+    <Parameter Name="Shape" Type="varchar" Mode="In" />
+    <Parameter Name="NgGroup" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PR_PRD_LCDRateData_1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fac" Type="varchar" Mode="In" />
+    <Parameter Name="CodeNo" Type="varchar" Mode="In" />
+    <Parameter Name="Start" Type="datetime" Mode="In" />
+    <Parameter Name="End" Type="datetime" Mode="In" />
+    <Parameter Name="WorkNo" Type="varchar" Mode="In" />
+    <Parameter Name="poType" Type="varchar" Mode="In" />
+    <Parameter Name="ERPPo" Type="varchar" Mode="In" />
+    <Parameter Name="PoNo" Type="varchar" Mode="In" />
+    <Parameter Name="SoNo" Type="varchar" Mode="In" />
+    <Parameter Name="PNo" Type="varchar" Mode="In" />
+    <Parameter Name="Shape" Type="varchar" Mode="In" />
+    <Parameter Name="NgGroup" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PR_PRD_LCDRateData_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fac" Type="varchar" Mode="In" />
+    <Parameter Name="CodeNo" Type="varchar" Mode="In" />
+    <Parameter Name="Start" Type="datetime" Mode="In" />
+    <Parameter Name="End" Type="datetime" Mode="In" />
+    <Parameter Name="WorkNo" Type="varchar" Mode="In" />
+    <Parameter Name="poType" Type="varchar" Mode="In" />
+    <Parameter Name="ERPPo" Type="varchar" Mode="In" />
+    <Parameter Name="PoNo" Type="varchar" Mode="In" />
+    <Parameter Name="SoNo" Type="varchar" Mode="In" />
+    <Parameter Name="PNo" Type="varchar" Mode="In" />
+    <Parameter Name="Shape" Type="varchar" Mode="In" />
+    <Parameter Name="NgGroup" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PR_PRD_LCDRateData_3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fac" Type="varchar" Mode="In" />
+    <Parameter Name="CodeNo" Type="varchar" Mode="In" />
+    <Parameter Name="Start" Type="datetime" Mode="In" />
+    <Parameter Name="End" Type="datetime" Mode="In" />
+    <Parameter Name="WorkNo" Type="varchar" Mode="In" />
+    <Parameter Name="poType" Type="varchar" Mode="In" />
+    <Parameter Name="ERPPo" Type="varchar" Mode="In" />
+    <Parameter Name="PoNo" Type="varchar" Mode="In" />
+    <Parameter Name="SoNo" Type="varchar" Mode="In" />
+    <Parameter Name="PNo" Type="varchar" Mode="In" />
+    <Parameter Name="Shape" Type="varchar" Mode="In" />
+    <Parameter Name="NgGroup" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PR_PRD_LCDRateData_3备份20170802" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fac" Type="varchar" Mode="In" />
+    <Parameter Name="CodeNo" Type="varchar" Mode="In" />
+    <Parameter Name="Start" Type="datetime" Mode="In" />
+    <Parameter Name="End" Type="datetime" Mode="In" />
+    <Parameter Name="WorkNo" Type="varchar" Mode="In" />
+    <Parameter Name="poType" Type="varchar" Mode="In" />
+    <Parameter Name="ERPPo" Type="varchar" Mode="In" />
+    <Parameter Name="PoNo" Type="varchar" Mode="In" />
+    <Parameter Name="SoNo" Type="varchar" Mode="In" />
+    <Parameter Name="PNo" Type="varchar" Mode="In" />
+    <Parameter Name="Shape" Type="varchar" Mode="In" />
+    <Parameter Name="NgGroup" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PR_PRD_LCDRateData_3备份20180118" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fac" Type="varchar" Mode="In" />
+    <Parameter Name="CodeNo" Type="varchar" Mode="In" />
+    <Parameter Name="Start" Type="datetime" Mode="In" />
+    <Parameter Name="End" Type="datetime" Mode="In" />
+    <Parameter Name="WorkNo" Type="varchar" Mode="In" />
+    <Parameter Name="poType" Type="varchar" Mode="In" />
+    <Parameter Name="ERPPo" Type="varchar" Mode="In" />
+    <Parameter Name="PoNo" Type="varchar" Mode="In" />
+    <Parameter Name="SoNo" Type="varchar" Mode="In" />
+    <Parameter Name="PNo" Type="varchar" Mode="In" />
+    <Parameter Name="Shape" Type="varchar" Mode="In" />
+    <Parameter Name="NgGroup" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PR_Prd_UpdDayPlan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="planNo" Type="varchar" Mode="In" />
+    <Parameter Name="OprResult" Type="varchar" Mode="InOut" />
+    <Parameter Name="Err" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="PR_PRD_WorkcenterOutData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="PR_RPT_BatchRate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FC_ERPPO" Type="varchar" Mode="In" />
+    <Parameter Name="FC_PONo" Type="varchar" Mode="In" />
+    <Parameter Name="FC_SONo" Type="varchar" Mode="In" />
+    <Parameter Name="FC_PNo" Type="varchar" Mode="In" />
+    <Parameter Name="FC_Shape" Type="varchar" Mode="In" />
+    <Parameter Name="FC_POType" Type="varchar" Mode="In" />
+    <Parameter Name="SFD_FDate" Type="datetime" Mode="In" />
+    <Parameter Name="EFD_FDate" Type="datetime" Mode="In" />
+    <Parameter Name="FC_Factory" Type="varchar" Mode="In" />
+    <Parameter Name="NoFGBatch" Type="bit" Mode="In" />
+    <Parameter Name="FC_NGGroup" Type="varchar" Mode="In" />
+    <Parameter Name="useExt" Type="bit" Mode="In" />
+    <Parameter Name="setExtsFC_Value" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Pr_Sys_AllowData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="varchar" Mode="In" />
+    <Parameter Name="CurrFac" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="PR_SYS_AUTONO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TableName" Type="varchar" Mode="In" />
+    <Parameter Name="ColumnName" Type="varchar" Mode="In" />
+    <Parameter Name="AutoNum" Type="int" Mode="In" />
+    <Parameter Name="ExtParams" Type="varchar" Mode="In" />
+    <Parameter Name="AutoNo" Type="varchar" Mode="InOut" />
+    <Parameter Name="ErrorInfo" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="Pr_Sys_GetCBusDept" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="varchar" Mode="In" />
+    <Parameter Name="CurrFac" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="PR_Sys_RoleModule" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="roleID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PR_Sys_RoleModuleDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="roleID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PR_SYS_TableSize" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="PR_Sys_UserModule" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="userID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PR_Upd_GYERPTOMES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PONo" Type="varchar" Mode="In" />
+    <Parameter Name="Result" Type="varchar" Mode="InOut" />
+    <Parameter Name="ErrorInfo" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="ProFirstPrdRate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Rpt_MachineReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Rpt_MachineReportBackup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Rpt_SetUpRateNewIsLink" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fac" Type="varchar" Mode="In" />
+    <Parameter Name="CodeNo" Type="varchar" Mode="In" />
+    <Parameter Name="Start" Type="datetime" Mode="In" />
+    <Parameter Name="End" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="Rpt_SetUpRateNewNoLink" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fac" Type="varchar" Mode="In" />
+    <Parameter Name="CodeNo" Type="varchar" Mode="In" />
+    <Parameter Name="Start" Type="datetime" Mode="In" />
+    <Parameter Name="End" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="Rpt_UserUPHReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_TongBuCcmPO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_zyhistoty" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_zyhistoty2020Q1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_zyhistoty2020Q2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_zyhistoty2020Y" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="MesModelStoreContainer" />
+</Schema>

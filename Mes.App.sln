@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mes.BLL", "Mes.BLL\Mes.BLL.csproj", "{B368BFB9-70C6-489B-8F52-5B032872AD90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mes.DAL", "Mes.DAL\Mes.DAL.csproj", "{46188D5C-BE40-4592-938E-854B2C80AAA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mes.Model", "Mes.Model\Mes.Model.csproj", "{2299162A-5037-4394-9C20-55C1B5516048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mes.Core", "Mes.Core\Mes.Core.csproj", "{4802B440-47DA-438A-AA30-DC6DDA69E6CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mes.Common", "Mes.Common\Mes.Common.csproj", "{82FFADCB-D361-4087-A95E-097C86103310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mes.WebApi", "Mes.WebApi\Mes.WebApi.csproj", "{C8DD4586-589C-4338-BE6E-01FB02CC917D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{3BE2C92F-0037-4737-8021-3E135DACE057}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\System.Runtime.CompilerServices.Unsafe.dll = Lib\System.Runtime.CompilerServices.Unsafe.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B368BFB9-70C6-489B-8F52-5B032872AD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B368BFB9-70C6-489B-8F52-5B032872AD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B368BFB9-70C6-489B-8F52-5B032872AD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B368BFB9-70C6-489B-8F52-5B032872AD90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46188D5C-BE40-4592-938E-854B2C80AAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46188D5C-BE40-4592-938E-854B2C80AAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46188D5C-BE40-4592-938E-854B2C80AAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46188D5C-BE40-4592-938E-854B2C80AAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2299162A-5037-4394-9C20-55C1B5516048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2299162A-5037-4394-9C20-55C1B5516048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2299162A-5037-4394-9C20-55C1B5516048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2299162A-5037-4394-9C20-55C1B5516048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4802B440-47DA-438A-AA30-DC6DDA69E6CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4802B440-47DA-438A-AA30-DC6DDA69E6CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4802B440-47DA-438A-AA30-DC6DDA69E6CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4802B440-47DA-438A-AA30-DC6DDA69E6CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82FFADCB-D361-4087-A95E-097C86103310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82FFADCB-D361-4087-A95E-097C86103310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82FFADCB-D361-4087-A95E-097C86103310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82FFADCB-D361-4087-A95E-097C86103310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8DD4586-589C-4338-BE6E-01FB02CC917D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8DD4586-589C-4338-BE6E-01FB02CC917D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8DD4586-589C-4338-BE6E-01FB02CC917D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8DD4586-589C-4338-BE6E-01FB02CC917D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF1B7B7B-4381-4E9D-BFCF-E8D2D8A12C13}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.0.100.198:8080/tfs/hltmes1.5
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Mes.BLL\\Mes.BLL.csproj
+		SccProjectName1 = Mes.BLL
+		SccLocalPath1 = Mes.BLL
+		SccProjectUniqueName2 = Mes.Common\\Mes.Common.csproj
+		SccProjectName2 = Mes.Common
+		SccLocalPath2 = Mes.Common
+		SccProjectUniqueName3 = Mes.Core\\Mes.Core.csproj
+		SccProjectName3 = Mes.Core
+		SccLocalPath3 = Mes.Core
+		SccProjectUniqueName4 = Mes.DAL\\Mes.DAL.csproj
+		SccProjectName4 = Mes.DAL
+		SccLocalPath4 = Mes.DAL
+		SccProjectUniqueName5 = Mes.Model\\Mes.Model.csproj
+		SccProjectName5 = Mes.Model
+		SccLocalPath5 = Mes.Model
+		SccProjectUniqueName6 = Mes.WebApi\\Mes.WebApi.csproj
+		SccProjectName6 = Mes.WebApi
+		SccLocalPath6 = Mes.WebApi
+	EndGlobalSection
+EndGlobal
